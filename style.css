@@ -1,0 +1,125 @@
+
+:root {
+    --primary-color: #e50914; 
+    --background-color: #a85656; 
+    --text-color: #ffffff;
+    --card-color: #575252;
+    --border-color: #575454;
+    --font-family:  Arial, sans-serif;
+}
+
+body {
+    --bs-primary:#e50914;
+    --bs-primary-rgb: 229, 9, 20;
+    --bs-body-bg: #a85656;
+    --bs-body-color: #ffffff;
+    --bs-border-color: #4a4949;
+    font-family: Arial, sans-serif;
+    margin-top: 55px;
+}
+
+.btn-primary {
+    --bs-btn-bg:  #e50914;
+    --bs-btn-border-color:  #e50914;
+    --bs-btn-hover-bg: #f6121d;
+    --bs-btn-hover-border-color: #f6121d;
+}
+
+.navbar-dark {
+    background-color: rgba(20, 20, 20, 0.8) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: #e50914 !important;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #e50914 !important;
+    font-size: 1.1em;
+}
+
+.card {
+    background-color: var(--card-color);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Spiderman_img6.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0.5rem;
+}
+.card-container::-webkit-scrollbar { display: none; }
+.card-container { -ms-overflow-style: none; scrollbar-width: none; }
+
+.card-container .card {
+    min-width: 200px;
+}
+
+
+.form-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 4rem;
+    border-radius: 10px;
+}
+.form-control {
+    background-color: #333;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+.form-control:focus {
+    background-color: #444;
+    color: var(--text-color);
+    border-color: #fff;
+    box-shadow: none;
+}
+
+
+.admin-sidebar {
+    background-color: var(--card-color);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.admin-sidebar .nav-link {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+.admin-sidebar .nav-link:hover, .admin-sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--text-color) !important;
+}
+
+.main-footer {
+    border-top: 1px solid var(--border-color);
+    color: #8c8c8c;
+    height: 4rem;
+}

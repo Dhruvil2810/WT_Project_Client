@@ -1,0 +1,77 @@
+:root {
+    --bs-primary: #e50914;
+    --bs-primary-rgb: 229, 9, 20;
+    --bs-dark-rgb: 20, 20, 20;
+    --bs-body-bg: #141414;
+    --bs-body-color: #ffffff;
+    --bs-border-color: #4a4949;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.admin-sidebar {
+    background-color: #1f1f1f;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+
+.admin-sidebar .navbar-brand {
+    color: var(--bs-primary);
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.admin-sidebar .nav-link {
+    color: #adb5bd;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+}
+
+.admin-sidebar .nav-link:hover {
+    background-color: #343a40;
+    color: var(--bs-text-color);
+}
+
+.admin-sidebar .nav-link.active {
+    background-color: var(--bs-primary);
+    color: var(--bs-text-color);
+    font-weight: 600;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border: 1px solid var(--bs-border-color);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #f6121d;
+    --bs-btn-hover-border-color: #f6121d;
+    font-weight: 600;
+}
+
+.table-hover > tbody > tr:hover > * {
+    --bs-table-hover-bg: rgba(255, 255, 255, 0.075);
+}
+
+.centered-form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    background-color: #1f1f1f;
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid var(--bs-border-color);
+}
